@@ -107,8 +107,8 @@ main{
 
 .block1{ 
     width:900px;
-    color: rgb(110, 110, 110);
-    mix-blend-mode: difference;
+    color: rgb(0, 0, 0);
+    
     z-index: 2;
 
     margin-top: 30px;
@@ -137,8 +137,7 @@ div img{
     color: rgb(255, 255, 255);
     border-radius: 5px;
     padding-left: 5px;
-    
-    transition: 0.3s;
+
 }
 
 
@@ -210,4 +209,5 @@ div img{
 .footer-bottom a {
     color: var(--highlight-color);
 }
+
 
