@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaGuard - Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    
+    <header class="main-header">
+        <div class="logo-container">
+            <h1 class="logo">AquaGuard</h1>
+            <p class="motto">Protecting Our Planet's Most Precious Resource</p>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="hamburger-label" aria-label="Toggle navigation">&#9776;</label>
+
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Water Conservation</a></li>
+                <li><a href="lessons.html">Conservation Tips</a></li>
+                <li><a href="quiz.html" class="active" aria-current="page">Quizzes</a></li>
+                <li><a href="resources-contact.html">Contact & Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- Hidden radio buttons to control which section is visible -->
+    <input type="radio" name="step" id="q1" checked>
+    <input type="radio" name="step" id="q2">
+    <input type="radio" name="step" id="q3">
+    <input type="radio" name="step" id="q4">
+    <input type="radio" name="step" id="q5">
+    <input type="radio" name="step" id="q6">
+    <input type="radio" name="step" id="q7">
+    <input type="radio" name="step" id="q8">
+    <input type="radio" name="step" id="q9">
+    <input type="radio" name="step" id="q10">
+    <input type="radio" name="step" id="results">
+
+    <div class="quiz-container">
+
+        <!-- Question 1 Section -->
+        <section class="question q1">
+            <h2>Question 1</h2>
+            <p>What's the best way to save water at home?</p>
+            
+            <!-- Correct Answer -->
+            <input type="radio" name="a1" id="a1-correct" data-correct>
+            <label for="a1-correct">Fix a leaky faucet</label>
+            
+            <!-- Incorrect Answer -->
+            <input type="radio" name="a1" id="a1-incorrect">
+            <label for="a1-incorrect">Let the tap drip overnight</label>
+            <label for="q2" class="btn next-btn">Next</label>
+        </section>
+
+        <!-- Question 2 Section -->
+        <section class="question q2">
+            <h2>Question 2</h2>
+            <p>Which activity uses the most water?</p>
+            
+            <!-- Incorrect Answer -->
+            <input type="radio" name="a2" id="a2-incorrect">
+            <label for="a2-incorrect">Taking a quick 5-minute shower</label>
+            
+            <!-- Correct Answer -->
+            <input type="radio" name="a2" id="a2-correct" data-correct>
+            <label for="a2-correct">Washing clothes in a full bathtub</label>
+            
+            <div class="button-group">
+                <label for="q1" class="btn back-btn">Back</label>
+                <label for="q3" class="btn next-btn">Next</label>
+            </div>
+        </section>
+
+        <!-- Question 3 Section -->
+        <section class="question q3">
+            <h2>Question 3</h2>
+            <p>How can you easily save water in the garden?</p>
+            
+            <!-- Incorrect Answer -->
+            <input type="radio" name="a3" id="a3-incorrect">
+            <label for="a3-incorrect">Water plants in the middle of a hot day</label>
+            
+            <!-- Correct Answer -->
+            <input type="radio" name="a3" id="a3-correct" data-correct>
+            <label for="a3-correct">Water plants early in the morning or late evening</label>
+            
+            <div class="button-group">
+                <label for="q2" class="btn back-btn">Back</label>
+                <label for="q4" class="btn next-btn">Next</label>
+            </div>
+        </section>
+
+        <!-- Question 4 Section -->
+        <section class="question q4">
+            <h2>Question 4</h2>
+            <p>What percentage of Earth's water is actually freshwater?</p>
+            
+            <input type="radio" name="a4" id="a4-incorrect1">
+            <label for="a4-incorrect1">75%</label>
+            <input type="radio" name="a4" id="a4-incorrect2">
+            <label for="a4-incorrect2">50%</label>
+            <input type="radio" name="a4" id="a4-correct" data-correct>
+            <label for="a4-correct">Just 3%</label>
+            
+            <div class="button-group">
+                <label for="q3" class="btn back-btn">Back</label>
+                <label for="q5" class="btn next-btn">Next</label>
+            </div>
+        </section>
+
+        <!-- Question 5 Section -->
+        <section class="question q5">
+            <h2>Question 5</h2>
+            <p>How can we use greywater (recycled water from sinks and showers)?</p>
+            
+            <input type="radio" name="a5" id="a5-correct" data-correct>
+            <label for="a5-correct">For watering the garden</label>
+            <input type="radio" name="a5" id="a5-incorrect">
+            <label for="a5-incorrect">For drinking</label>
+            
+            <div class="button-group">
+                <label for="q4" class="btn back-btn">Back</label>
+                <label for="q6" class="btn next-btn">Next</label>
+            </div>
+        </section>
+        
+        <!-- Question 6 Section -->
+        <section class="question q6">
+            <h2>Question 6</h2>
+            <p>How much water can a leaky faucet waste in a single year?</p>
+            
+            <input type="radio" name="a6" id="a6-incorrect1">
+            <label for="a6-incorrect1">Around 100 liters</label>
+            <input type="radio" name="a6" id="a6-correct" data-correct>
+            <label for="a6-correct">Thousands of liters!</label>
+            
+            <div class="button-group">
+                <label for="q5" class="btn back-btn">Back</label>
+                <label for="q7" class="btn next-btn">Next</label>
+            </div>
+        </section>
+
+        <!-- Question 7 Section -->
+        <section class="question q7">
+            <h2>Question 7</h2>
+            <p>What's the most water-wise way to wash your car?</p>
+            
+            <input type="radio" name="a7" id="a7-incorrect1">
+            <label for="a7-incorrect1">Using a running hose</label>
+            <input type="radio" name="a7" id="a7-correct" data-correct>
+            <label for="a7-correct">Using a bucket and sponge</label>
+            
+            <div class="button-group">
+                <label for="q6" class="btn back-btn">Back</label>
+                <label for="q8" class="btn next-btn">Next</label>
+            </div>
+        </section>
+        
+        <!-- Question 8 Section -->
+        <section class="question q8">
+            <h2>Question 8</h2>
+            <p>What's a water-efficient appliance for your laundry?</p>
+            
+            <input type="radio" name="a8" id="a8-correct" data-correct>
+            <label for="a8-correct">A front-loading washing machine</label>
+            <input type="radio" name="a8" id="a8-incorrect">
+            <label for="a8-incorrect">A top-loading washing machine</label>
+            
+            <div class="button-group">
+                <label for="q7" class="btn back-btn">Back</label>
+                <label for="q9" class="btn next-btn">Next</label> 
+            </div>
+        </section>
+
+        <!-- Question 9 Section -->
+        <section class="question q9">
+            <h2>Question 9</h2>
+            <p>How can you conserve water when you brush your teeth?</p>
+            
+            <input type="radio" name="a9" id="a9-correct" data-correct>
+            <label for="a9-correct">Turn off the tap while brushing</label>
+            <input type="radio" name="a9" id="a9-incorrect">
+            <label for="a9-incorrect">Let the water run</label>
+            
+            <div class="button-group">
+                <label for="q8" class="btn back-btn">Back</label>
+                <label for="q10" class="btn next-btn">Next</label>    
+            </div>
+        </section>
+
+        <!-- Question 10 Section -->
+        <section class="question q10">
+            <h2>Question 10</h2>
+            <p>What's a simple way to save water in the kitchen?</p>
+            
+            <input type="radio" name="a10" id="a10-incorrect">
+            <label for="a10-incorrect">Thaw frozen food under running water</label>
+            <input type="radio" name="a10" id="a10-correct" data-correct>
+            <label for="a10-correct">Fill a basin to wash vegetables</label>
+           
+            <div class="button-group">
+                <label for="q9" class="btn back-btn">Back</label>
+                <label for="results" class="btn submit-btn">Submit</label>
+            </div>
+        </section>
+
+        <!-- Final Results Section -->
+        <section class="question results">
+            <h2>Fantastic job!</h2> 
+            <div class="button-group">
+                <label for="q1" class="btn back-btn">Restart Quiz</label>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About AquaGuard</h3>
+                <p>AquaGuard is a non-profit initiative dedicated to promoting water conservation through education and community engagement.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Water Conservation</a></li>
+                    <li><a href="lessons.html">Conservation Tips</a></li>
+                    <li><a href="quiz.html">Quizzes</a></li>
+                    <li><a href="resources-contact.html">Contact & Resources</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Facebook"><img src="images/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#" aria-label="Twitter"><img src="images/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#" aria-label="Instagram"><img src="images/instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2015 AquaGuard. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="accessibility.html">Accessibility Statement</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
